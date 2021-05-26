@@ -28,8 +28,7 @@ Obs.: **shared_preferences** funciona de forma semelhante ao localStorage.
 
 ## Resultados
 ![Home](/prints/inicio.jpg)
-![App Populado](/prints/populado.jpg)
-![Deleção de tarefas](/prints/delecao.jpg)
+
 
 
 

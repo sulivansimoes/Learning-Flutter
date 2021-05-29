@@ -27,11 +27,9 @@ Aplicativo permite salvar as tarefas à serem realizadas e marcar quando forem f
 Obs.: **shared_preferences** funciona de forma semelhante ao localStorage.
 
 ## Resultados
-![Home](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/inicio.jpg)
-
-![App Populado](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/populado.jpg)
-
-![Deleção de tarefas](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/delecao.jpg)
+![Home](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/inicio.jpg)&nbsp;
+![App Populado](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/populado.jpg)&nbsp;
+![Deleção de tarefas](https://github.com/sulivansimoes/Learning-Flutter/blob/0aba62f8ed97ea1d569e283d63059c695634b3f0/lista_de_tarefas/prints/delecao.jpg)&nbsp;
 
 
 

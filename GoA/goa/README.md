@@ -3,7 +3,7 @@
 Aplicativo realiza calculo para ver se compensa abastercer com álcool ou gasolina.
 
 ## Aprendendo Flutter 
-1. Conceitos básicos como:
+1. Conceitos como:
    - Criando widget próprios
    - CircularProgressIndicator
    - etc...

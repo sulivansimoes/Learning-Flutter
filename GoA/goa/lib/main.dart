@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:goa/widget/input.widget.dart';
 import 'package:goa/widget/loading-button.widget.dart';
 import 'package:goa/widget/logo.widget.dart';
+import 'package:goa/widget/submit-form.dart';
 import 'package:goa/widget/success.widget.dart';
 
 void main() {
@@ -37,30 +38,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: ListView(
-        children: <Widget>[
+        backgroundColor: Theme.of(context).primaryColor,
+        body: ListView(children: <Widget>[
           Logo(),
-          Success(
-            result: 'Compensa por gasosa',
-            reset: () {},
+          SubmitForm(
+            alcoolCntrl: this._alcoolCntrl,
+            gasolinaCntrl: this._gasolinaCntrl,
+            busy: false,
+            submitFunc: () {},
           ),
-          Input(
-            label: 'Gasolina:',
-            controller: _gasolinaCntrl,
-          ),
-          Input(
-            label: 'Álcool:',
-            controller: _alcoolCntrl,
-          ),
-          LoadingButton(
-            text: 'CALCULAR',
-            funcao: () {},
-            busy: true,
-            invert: false,
-          )
-        ],
-      ),
-    );
+        ]));
   }
 }

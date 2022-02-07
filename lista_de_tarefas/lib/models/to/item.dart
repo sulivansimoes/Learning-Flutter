@@ -16,9 +16,9 @@ class Item {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['titulo'] = this.titulo;
-    data['feito'] = this.feito;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['titulo'] = titulo;
+    data['feito']  = feito;
     return data;
   }
 }

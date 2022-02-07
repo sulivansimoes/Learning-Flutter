@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'DataHandler.dart';
 
 ///Nome da base de dados da aplicação
-final String keyPrefs = 'data';
+const String keyPrefs = 'data';
 
 class DataHandlerSharedPreferences implements DataHandler {
   @override

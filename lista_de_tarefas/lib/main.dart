@@ -5,17 +5,19 @@ import 'models/FactoryDataHandler.dart';
 import 'models/enum/TypeDataHandler.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Lista de tarefas',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.purple,
       ),
       home: HomePage(),
     );
@@ -25,7 +27,7 @@ class App extends StatelessWidget {
 class HomePage extends StatefulWidget {
   final itens = <Item>[];
 
-  HomePage();
+  HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -45,7 +47,7 @@ class _HomePageState extends State<HomePage> {
 
   ///Fornece mensagem de alerta para usuário informar a tarefa.
   final snackBar = SnackBar(
-    content: Text('Escreva a tarefa!', textAlign: TextAlign.center),
+    content: const Text('Escreva a tarefa!', textAlign: TextAlign.center),
     backgroundColor: Colors.redAccent.shade700,
   );
 
@@ -100,12 +102,12 @@ class _HomePageState extends State<HomePage> {
               controller: newTaskCntrl,
               keyboardType: TextInputType.text,
               //Seta propriedades de estilo do texto digitado
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 20,
               ),
               //Decoration Equivalente a um placeholder do html
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   labelText: 'Digite a nova tarefa aqui..',
                   labelStyle: TextStyle(
                     color: Colors.white,
@@ -132,8 +134,8 @@ class _HomePageState extends State<HomePage> {
               //Edita estilos visuais ao deslisar o item para o lado
               background: Container(
                 color: Colors.redAccent.shade700.withOpacity(0.80),
-                child: Icon(Icons.delete),
-                padding: EdgeInsets.all(12),
+                child: const Icon(Icons.delete),
+                padding: const EdgeInsets.all(12),
                 alignment: Alignment.centerLeft,
               ),
               //Habilita o deslize somente em uma direção
@@ -149,7 +151,7 @@ class _HomePageState extends State<HomePage> {
           onPressed: () {
             addTarefa();
           },
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
           backgroundColor: Colors.purple,
           tooltip: 'Adiciona nova tarefa',
         ));
